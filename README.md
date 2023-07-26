@@ -57,31 +57,51 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-NPM installed
-Any code editors
+In order to run this project you need the following tools:
+- Node.js on your computer
+- Code editor e.g.: VScode
 
 ### Setup
 
-Clone this repository to your desired folder by.
-- cd my-folder
-- git clone [https://github.com/mershark/Leaderboard-website.git]
-- cd my-project
+Clone this repository to your desired folder by running the following commands in your terminal:
 
+```sh
+  cd your-prefered-folder-name
+  
+  git clone https://github.com/mershark/Leaderboard-website.git
+```
 
 ### Install
 
-Installation is completed once the repository and cloned into your local machine.
+- Install this project with:
 
+```sh
+  cd Leaderboard-website
+
+  npm install or npm i
+```
+
+- Run an optimized build for prodction:
+```
+  npm run build
+```
 
 ### Usage
 
-To run the project launch index.html in your browser
+To run the project, execute the following command:
+
+```sh
+  npm start
+
+```
 
 ### Run tests
 
 To run tests, run the following command:
-npx stylelint "**/*.{css,scss}
+
+```sh
+  npm run test
+```
 
 ### Deployment
 
