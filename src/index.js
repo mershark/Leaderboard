@@ -1,14 +1,25 @@
-import _ from 'lodash';
 import './style.css';
+import sampleData from './modules/scorelist';
 
-function component() {
-  const element = document.createElement('div');
+// Function to display the leaderboard scores in the score list section
+const displayScores = () => {
+  const scoreList = document.getElementById('score-list');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+  // Clear any existing content in the score list
+  scoreList.innerHTML = '';
 
-  return element;
-}
+  // Loop through the sampleData array and create list items for each entry
+  sampleData.forEach((entry, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${entry.name}: ${entry.score}`;
+    
+    // Add the 'alternate' CSS class to every second list item (even-indexed)
+    if (index % 2 !== 0) {
+      listItem.classList.add('alternate');
+    }
 
-document.body.appendChild(component());
+    scoreList.appendChild(listItem);
+  });
+};
+
+window.addEventListener('load', displayScores);

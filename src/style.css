@@ -1,3 +1,91 @@
-body {
-  background-color: white;
+header {
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 80%;
+  flex-direction: column;
+}
+
+.leaderboard-div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.refresh-btn {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  box-shadow: 4px 3px;
+  height: 30px;
+}
+
+#score-list {
+  border: 3px solid black;
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+#score-list li.alternate {
+  background-color: #f0f0f0;
+}
+
+#score-list li {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+#score-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+input {
+  border: 3px solid black;
+  font-weight: bold;
+  height: 20px;
+  padding-left: 5px;
+}
+
+.addbtn-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addscore-btn {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  box-shadow: 4px 3px;
+  height: 30px;
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  #leaderboard {
+    width: 60%;
+  }
+
+  form {
+    padding-top: 15px;
+  }
 }
