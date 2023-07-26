@@ -29,9 +29,9 @@
 - [📝 License](#license)
 
 
-# 📖 Set Up Project With Webpack <a name="about-project"></a>
+# 📖 Leaderboard Website <a name="about-project"></a>
 
-In this project I build a simple yet powerful webpack boilerplate, which can be used as a starting point in a project. 
+In this project I set up a JavaScript for a Leaderboard list app, using webpack and ES6 features, notably modules. This is the basic structure of the application.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,7 +46,7 @@ In this project I build a simple yet powerful webpack boilerplate, which can be 
 
 ### Key Features <a name="key-features"></a>
 
-- Has HTML template to use.
+- Has basic structure to use.
 - You can view live edit in your localhost while editing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -65,7 +65,7 @@ Any code editors
 
 Clone this repository to your desired folder by.
 - cd my-folder
-- git clone [https://github.com/mershark/webpack-to-bundle-JavaScript]
+- git clone [https://github.com/mershark/Leaderboard-website.git]
 - cd my-project
 
 
@@ -102,7 +102,8 @@ You can deploy this project by transferring the files in your local repository o
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **More templates**
+- [ ] **Add score functionality**
+- [ ] **Refresh functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
