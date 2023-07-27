@@ -1,25 +1,25 @@
 import './style.css';
-import sampleData from './modules/scorelist.js';
+import { getScores, addScore } from './modules/api.js';
+import { displayScores } from './modules/scorelist.js';
 
-// Function to display the leaderboard scores in the score list section
-const displayScores = () => {
-  const scoreList = document.getElementById('score-list');
+// Event listener for the "Refresh" button
+const refreshBtn = document.querySelector('.refresh-btn');
+refreshBtn.addEventListener('click', displayScores);
 
-  // Clear any existing content in the score list
-  scoreList.innerHTML = '';
+// Event listener for the "Add Score" form submission
+const scoreForm = document.getElementById('score-form');
+scoreForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const playerName = document.getElementById('player-name').value;
+  const scoreValue = parseInt(document.getElementById('score').value, 10);
 
-  // Loop through the sampleData array and create list items for each entry
-  sampleData.forEach((entry, index) => {
-    const listItem = document.createElement('li');
-    listItem.textContent = `${entry.name}: ${entry.score}`;
-
-    // Add the 'alternate' CSS class to every second list item (even-indexed)
-    if (index % 2 !== 0) {
-      listItem.classList.add('alternate');
-    }
-
-    scoreList.appendChild(listItem);
-  });
-};
+  if (playerName && !isNaN(scoreValue)) {
+    addScore(playerName, scoreValue);
+    displayScores(); // Refresh the scores after adding a new score
+    scoreForm.reset(); // Clear the form fields after submission
+  } else {
+    // alert('Please enter a valid name and score.');
+  }
+});
 
 window.addEventListener('load', displayScores);
