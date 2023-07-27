@@ -151,7 +151,7 @@ You can deploy this project by transferring the files in your local repository o
 👤 **Mershark Takyi**
 
 - GitHub: [@githubhandle](https://github.com/mershark)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mershark/)
+- LinkedIn: [Profile link](https://www.linkedin.com/in/mershark/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -180,6 +180,7 @@ Give a ⭐️ if you like this project!
 
 - Thanks to the Microverse team for the great curriculum.
 - Thanks to the Code Reviewer(s) for the insightful feedback.
+- Thanks to my coding partners, the morning session team and standup team for their coperation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
