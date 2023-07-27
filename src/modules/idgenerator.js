@@ -16,18 +16,18 @@ const createGame = async (gameName) => {
     const data = await response.json();
     return data.result.split(': ')[1]; // Extract the gameId from the response
   } catch (error) {
-    // console.error('Error creating game:', error);
+    console.error('Error creating game:', error);
     return null;
   }
 };
 
 // Example usage to create a game and get the gameId
-const myGameName = 'The Mersh Game';
+const myGameName = 'My Cool Game'; // Replace with your desired game name
 createGame(myGameName)
   .then((gameId) => {
     if (gameId) {
-      // console.log('Game created! Game ID:', gameId);
+      console.log('Game created! Game ID:', gameId);
     } else {
-      // console.log('Failed to create the game.');
+      console.log('Failed to create the game.');
     }
   });

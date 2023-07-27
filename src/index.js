@@ -23,8 +23,6 @@ scoreForm.addEventListener('submit', async (event) => {
   if (playerName && !Number.isNaN(scoreValue)) {
     try {
       await addScore(playerName, scoreValue); // Add the score to the API
-      const scores = await getScores();
-      displayScores(scores);
       scoreForm.reset();
     } catch (error) {
       // Handle errors here if needed
