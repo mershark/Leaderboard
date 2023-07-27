@@ -31,23 +31,58 @@
 
 # 📖 Leaderboard Website <a name="about-project"></a>
 
-In this project I set up a JavaScript for a Leaderboard list app, using webpack and ES6 features, notably modules. This is the basic structure of the application.
+> In this project I set up a JavaScript for a Leaderboard list app, using webpack and ES6 features, notably modules. Data was added and fetched using a leaderboard [API](https://microverse.notion.site/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) service
 
-## 🛠 Built With <a name="built-with"></a>
+## Built With
+
+- HTML
+- CSS
+- JAVASCRIPT
 
 ### Tech Stack <a name="tech-stack"></a>
 
+> 
+
 <details>
-  <summary>Client</summary>
+  <summary>Markup Language</summary>
   <ul>
-    <li><a href="">HTML, CSS and JavaScript</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
   </ul>
 </details>
 
+<details>
+<summary>Style</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Layout</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Interaction and Dynamic HTML</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">Javascript</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Module Bundler</summary>
+  <ul>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+  </ul>
+</details>
+
+
 ### Key Features <a name="key-features"></a>
 
-- Has basic structure to use.
-- You can view live edit in your localhost while editing.
+- Add data to the Leaderboard.
+- Refresh scorelist
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,14 +151,14 @@ You can deploy this project by transferring the files in your local repository o
 👤 **Mershark Takyi**
 
 - GitHub: [@githubhandle](https://github.com/mershark)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mershark/)
+- LinkedIn: [Profile link](https://www.linkedin.com/in/mershark/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Add score functionality**
-- [ ] **Refresh functionality**
+- [ ] **Remove score(s) from leaderboard**
+- [ ] **Modify score(s) on leaderboard**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,6 +180,7 @@ Give a ⭐️ if you like this project!
 
 - Thanks to the Microverse team for the great curriculum.
 - Thanks to the Code Reviewer(s) for the insightful feedback.
+- Thanks to my coding partners, the morning session team and standup team for their coperation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
