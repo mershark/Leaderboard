@@ -25,7 +25,6 @@ const addScore = async (name, score) => {
         user: name, score,
       }),
     });
-    // eslint-disable-next-line no-unused-vars
     await response.json();
     // Display success message here (note for debugging)
   } catch (error) {
