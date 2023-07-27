@@ -1,6 +1,6 @@
 import './style.css';
 import { getScores, addScore } from './modules/api.js';
-import { displayScores } from './modules/scorelist.js';
+import displayScores from './modules/scorelist.js';
 
 // Event listener for the "Refresh" button
 const refreshBtn = document.querySelector('.refresh-btn');

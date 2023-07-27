@@ -1,5 +1,5 @@
 import { getScores } from './api.js';
-import { sortScoresDescending } from './sortscores.js';
+import sortScoresDescending from './sortscores.js';
 
 // Function to display the leaderboard scores in the score list section
 const displayScores = async () => {
@@ -28,4 +28,4 @@ const displayScores = async () => {
   }
 };
 
-export { displayScores };
+export default displayScores;
