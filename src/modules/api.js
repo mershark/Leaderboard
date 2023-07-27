@@ -22,11 +22,10 @@ const addScore = async (name, score) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        user: name,
-        score: score,
+        user: name, score,
       }),
     });
-    const data = await response.json();
+    //const data = await response.json();
     // Display success message here (note for debugging)
   } catch (error) {
     // No need to display errors here (note for debugging)
