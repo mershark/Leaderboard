@@ -1,3 +1,14 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
 header {
   margin-left: 10px;
 }
@@ -13,6 +24,25 @@ header {
   flex-direction: column;
 }
 
+h1,
+h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 .leaderboard-div {
   display: flex;
   gap: 10px;
@@ -21,42 +51,73 @@ header {
 }
 
 .refresh-btn {
-  background-color: #fff;
+  background: linear-gradient(135deg, #fff, #e0e0e0);
+  color: #333;
   font-weight: bold;
-  padding: 5px 10px;
-  border: 2px solid #000;
-  box-shadow: 4px 3px;
-  height: 30px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  transform: scale(1.05);
 }
 
 #score-list {
-  border: 3px solid black;
+  border: none;
   list-style-type: none;
   padding-left: 0;
   font-weight: bold;
-}
-
-#score-list li.alternate {
-  background-color: #f0f0f0;
+  border-radius: 15px;
 }
 
 #score-list li {
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff, #e0e0e0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+#score-list li:hover {
+  transform: scale(1.05);
+}
+
+#score-list li.alternate {
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#score-list li:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last item to avoid extra spacing */
 }
 
 #score-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 input {
-  border: 3px solid black;
+  border: 2px solid #d4d4d4;
   font-weight: bold;
-  height: 20px;
-  padding-left: 5px;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 25px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #888;
 }
 
 .addbtn-div {
@@ -65,13 +126,19 @@ input {
 }
 
 .addscore-btn {
-  background-color: #fff;
+  background: linear-gradient(135deg, #fff, #e0e0e0);
+  color: #333;
   font-weight: bold;
-  padding: 5px 10px;
-  border: 2px solid #000;
-  box-shadow: 4px 3px;
-  height: 30px;
-  width: 100px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.addscore-btn:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
