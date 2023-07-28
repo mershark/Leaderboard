@@ -1,3 +1,7 @@
+
+![leaderboard img](https://github.com/mershark/Leaderboard-website/assets/113654948/9cb2873e-e216-4878-a5ea-c1f122182b24)
+
+
 <a name="readme-top"></a>
 
 <div align="center">
