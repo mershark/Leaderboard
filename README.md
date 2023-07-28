@@ -154,7 +154,7 @@ You can deploy this project by transferring the files in your local repository o
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]([Click here](https://mershark.github.io/Leaderboard-website/dist/))
+- ([Click here](https://mershark.github.io/Leaderboard/dist/))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
